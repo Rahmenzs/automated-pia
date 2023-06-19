@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -234,7 +237,7 @@
       <div class="container-fluid">
         @yield('content')
       </div><!-- /.container-fluid -->
-    </section>
+    </section><br>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

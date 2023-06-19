@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Added 
+use App\Http\Controllers\PiaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +20,11 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-Route::get('/test', function () {
-    return view('layouts/general_layout');
-});
+Route::get('/system_description', [PiaController::class, 'proceed_to_system_description']);
+Route::get('/proceed_to_threshold_analysis', [PiaController::class, 'proceed_to_threshold_analysis']);
+Route::post('proceed_to_threshold_analysis', [PiaController::class, 'proceed_to_threshold_analysis']);
+
+
 
 Auth::routes();
 
