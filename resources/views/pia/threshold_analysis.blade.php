@@ -13,7 +13,8 @@
         You can expand on your answers as the project develops if you need to.
     </p>
     
-    <form>
+    <form action="proceed_to_data_flows" method="post">
+        @csrf
         <p>a. Will the project or system involve the collection of new information about individuals?</p>
         <label><input type="radio" id="radioPrimary1" name="question_a" value="no"> No</label>
         <label><input type="radio" id="radioPrimary1" name="question_a" value="yes"> Yes</label>
@@ -46,7 +47,7 @@
         <label><input type="radio" name="question_h" value="no"> No</label>
         <label><input type="radio" name="question_h" value="yes"> Yes</label>
 
-        <br><button type="submit" class="btn btn-primary">Submit</button>
+        <br><button type="submit" class="btn btn-primary" value="1" name="value">Submit</button> <!-- Change value here later -->
     </form>
 
 
