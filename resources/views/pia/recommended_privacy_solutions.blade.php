@@ -45,7 +45,6 @@
                     <tr>
                       <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                     </tr>
-                    
                   </tbody>
                 </table>
               </div>
